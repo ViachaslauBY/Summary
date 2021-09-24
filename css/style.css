@@ -1,0 +1,547 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: #69b7eb;
+  background: -moz-linear-gradient(90deg, #69b7eb, #b3dbd3, #a6cee9);
+  background: -webkit-linear-gradient(90deg, #69b7eb, #b3dbd3, #a6cee9);
+  background: -o-linear-gradient(90deg, #69b7eb, #b3dbd3, #a6cee9);
+  background: -ms-linear-gradient(90deg, #69b7eb, #b3dbd3, #a6cee9);
+  background: linear-gradient(90deg, #69b7eb, #b3dbd3, #a6cee9);
+}
+
+.contacts,
+.skills,
+.hobbies,
+.about,
+.education,
+.courses,
+.languages {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 3px solid #000;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.contacts__title,
+.skills__title,
+.hobbies__title,
+.about__title,
+.education__title,
+.courses__title,
+.languages__title {
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #3f3f3f;
+  border-radius: 10px;
+}
+
+.skills__table,
+.education__table,
+.courses__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header */
+.header {
+  margin: 15px auto;
+  padding: 0 15px;
+  max-width: 1140px;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.header__photo {
+  display: block;
+  margin-right: 15px;
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.header__name {
+  font-size: 60px;
+}
+
+.header__profession {
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Main */
+.main {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+  display: flex;
+}
+
+.main__about,
+.main__education {
+  flex: 0 0 49.3%;
+}
+
+.main__about {
+  margin-right: 15px;
+}
+
+/* Contacts */
+.contacts__list {
+  list-style: none;
+}
+
+.contacts__item {
+  width: fit-content;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contacts__icon {
+  display: inline-block;
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  transition: transform 0.2s linear;
+}
+
+.contacts__text {
+  position: relative;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+}
+
+.contacts__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(34, 11, 243);
+  transform: scale(0);
+  transition: transform 0.2s linear;
+}
+
+.contacts__link:hover .contacts__icon {
+  transform: scale(1.2);
+}
+
+.contacts__link:hover .contacts__text::before {
+  transform: scale(1);
+}
+
+/* Skills */
+.skills__table {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.skills__table thead tr th,
+.skills__table tbody tr td {
+  padding: 5px 0;
+}
+
+.skills__table thead th,
+.skills__table tbody tr td {
+  border: 1px solid #000;
+}
+
+.skills__icon {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+/* Hobbies */
+.hobbies__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.hobbies__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  width: 100%;
+  max-width: 80px;
+}
+
+.hobbies__icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.hobbies__text {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+/* About */
+.about__text {
+  font-size: 16px;
+}
+
+/* Education */
+.education__table tbody tr td {
+  padding: 8px 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.education__date,
+.courses__date {
+  width: 20%;
+}
+
+.education__name {
+  font-weight: 700;
+}
+
+/* Courses */
+.courses__table tbody tr td {
+  padding: 7px 5px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.courses__link,
+.education__link {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(63, 12, 245);
+  text-align: center;
+  text-decoration: none;
+}
+
+.courses__text {
+  width: 49%;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Languages  */
+.languages__list {
+  list-style: none;
+}
+
+/* Form */
+.check {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  max-width: 1140px;
+  display: flex;
+}
+
+.form {
+  padding: 15px;
+  background-color: #3f3f3f;
+  border-radius: 15px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group:first-child {
+  margin-bottom: 30px;
+}
+
+.form__group:last-child {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form__text {
+  position: absolute;
+  top: -24px;
+  left: 6px;
+}
+
+.is-invalid {
+  color: red;
+}
+
+.is-valid {
+  color: green;
+}
+
+.form__input {
+  display: block;
+  padding: 15px 15px;
+  width: 309px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #999999;
+  background: #ffffff;
+  border: 1px solid #ff5c00;
+  border-radius: 10px;
+}
+
+input[placeholder] {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #999999;
+}
+
+.message {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  resize: none;
+}
+
+.form__button {
+  display: inline-block;
+  padding: 15px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #ffffff;
+  background-color: #ff5c00;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #f6894a;
+}
+
+@media (max-width: 1024px) {
+  .header__name {
+    font-size: 50px;
+  }
+
+  .header__profession {
+    font-size: 30px;
+  }
+
+  .contacts__title,
+  .skills__title,
+  .hobbies__title,
+  .about__title,
+  .education__title,
+  .courses__title,
+  .languages__title {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .contacts__text,
+  .about__text,
+  .languages__item {
+    font-size: 15px;
+  }
+
+  .about__text {
+    line-height: 170%;
+  }
+
+  .education__date,
+  .courses__date,
+  .courses__text {
+    font-size: 15px;
+  }
+
+  .courses__link,
+  .education__link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 970px) {
+  .contacts__text,
+  .about__text,
+  .languages__item {
+    font-size: 14px;
+  }
+
+  .about__text {
+    line-height: 195%;
+  }
+
+  .education__date,
+  .courses__date,
+  .courses__text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 915px) {
+  .header__name {
+    font-size: 30px;
+  }
+
+  .header__profession {
+    font-size: 20px;
+  }
+
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .main__about,
+  .main__education {
+    flex: 1 0 51%;
+  }
+
+  .main__about {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 578px) {
+  .header {
+    margin: 8px auto;
+    padding: 0 8px;
+  }
+
+  .main,
+  .check {
+    padding: 0 8px;
+  }
+
+  .check {
+    margin-bottom: 8px;
+  }
+
+  .form {
+    padding: 8px;
+  }
+
+  .form__group:first-child {
+    margin-bottom: 24px;
+  }
+
+  .form__group:last-child {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .contacts,
+  .skills,
+  .hobbies,
+  .about,
+  .education,
+  .courses,
+  .languages {
+    margin-bottom: 8px;
+    padding: 8px;
+  }
+
+  .header__info {
+    flex-wrap: wrap;
+  }
+  .header__photo {
+    width: 155px;
+    height: 155px;
+  }
+
+  .contacts__icon,
+  .skills__icon,
+  .hobbies__icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .skills__table,
+  .hobbies__text,
+  .about__text,
+  .education__date,
+  .courses__date,
+  .courses__text,
+  .education__name,
+  .courses__link,
+  .education__link,
+  .languages__item,
+  .is-invalid,
+  .is-valid,
+  input[placeholder] {
+    font-size: 12px;
+  }
+
+  .form {
+    flex-grow: 1;
+  }
+
+  .message {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .form__input {
+    width: 100%;
+  }
+
+  .form__button {
+    padding: 15px 38px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .header__name {
+    font-size: 23px;
+  }
+
+  .header__profession {
+    font-size: 18px;
+  }
+
+  .skills__table thead {
+    display: none;
+  }
+
+  .skills__table tbody tr td {
+    padding: 0;
+    border: none;
+  }
+
+  .hobbies__text {
+    display: none;
+  }
+}
