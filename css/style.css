@@ -290,3 +290,35 @@ body {
 .education__profession {
   font-size: 18px;
 }
+
+/**********SKILLS**********/
+.skills__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skills__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.skills__icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.skills__text {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
