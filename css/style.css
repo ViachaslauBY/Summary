@@ -17,3 +17,71 @@ body {
     sans-serif;
   background-color: #f3f0f0;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+
+/**********HEADER**********/
+.header {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.header__container {
+  margin-bottom: 10px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.nav__link {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #356ad3;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.header__img {
+  margin-right: 10px;
+  width: 230px;
+  height: 230px;
+  border-radius: 20px;
+}
+
+.header__info {
+  width: 1000px;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 50px;
+  text-shadow: 1px 1px white, 2px 2px #777;
+}
+
+.header__subtitle {
+  font-size: 39px;
+  text-shadow: 1px 1px white, 2px 2px #777;
+}
