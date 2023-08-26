@@ -322,3 +322,24 @@ body {
   font-size: 18px;
   text-decoration: none;
 }
+
+/**********LANGUAGES**********/
+.languages__list {
+  list-style: none;
+}
+
+.languages__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.languages__img {
+  margin-right: 10px;
+  width: 60px;
+  height: 30px;
+}
+
+.languages__text {
+  font-size: 18px;
+}
