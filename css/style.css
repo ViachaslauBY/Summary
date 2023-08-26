@@ -204,3 +204,8 @@ body {
   -o-transform: scale(1);
   transform: scale(1);
 }
+
+/**********ABOUT ME**********/
+.about__text {
+  font-size: 18px;
+}
