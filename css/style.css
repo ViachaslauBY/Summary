@@ -291,6 +291,42 @@ body {
   font-size: 18px;
 }
 
+/**********CERTIFICATES**********/
+.certificates__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+  list-style: none;
+}
+
+.certificates__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 11px 10px;
+  padding: 3px;
+  border: 2px solid #00246c;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.certificates__item:hover {
+  opacity: 0.7;
+}
+
+.certificates__subtitle {
+  font-size: 18px;
+  color: #356ad3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.certificates__img {
+  padding: 5px;
+  width: 290px;
+  cursor: pointer;
+}
+
 /**********SKILLS**********/
 .skills__list {
   display: flex;
