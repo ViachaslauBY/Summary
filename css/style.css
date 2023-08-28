@@ -359,6 +359,74 @@ body {
   text-decoration: none;
 }
 
+/**********WORK EXPERIENCE**********/
+.work-experience__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+  list-style: none;
+}
+
+.work-experience__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 11px 10px;
+  padding: 3px;
+  border: 2px solid #00246c;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.work-experience__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.work-experience__subtitle {
+  font-size: 18px;
+  color: #356ad3;
+  text-transform: uppercase;
+}
+
+.work-experience__languages {
+  display: flex;
+}
+
+.work-experience__icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.work-experience__icon:not(:last-child) {
+  margin-right: 2px;
+}
+
+.icon-html {
+  background-image: url('img/html.png');
+}
+
+.work-experience__img {
+  padding: 5px;
+  width: 290px;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  -moz-transition: -moz-transform 0.5s linear;
+  -ms-transition: -ms-transform 0.5s linear;
+  -o-transition: -o-transform 0.5s linear;
+  transition: transform 0.5s linear;
+}
+
+.work-experience__img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 /**********LANGUAGES**********/
 .languages__list {
   list-style: none;
