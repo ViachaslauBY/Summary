@@ -447,3 +447,224 @@ body {
 .languages__text {
   font-size: 18px;
 }
+
+@media (max-width: 768px) {
+  .section {
+    margin-bottom: 10px;
+  }
+
+  .section__wrapper {
+    margin-bottom: 10px;
+  }
+
+  .section__title {
+    font-size: 18px;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: auto;
+    transition: all 0.2s;
+    z-index: 2;
+  }
+
+  .nav.active {
+    left: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    margin: 100px auto 0px;
+    text-align: center;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .nav__link {
+    display: block;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .header__title {
+    font-size: 32px;
+  }
+
+  .header__subtitle {
+    font-size: 24px;
+  }
+
+  .contacts__text,
+  .about__text,
+  .education__date,
+  .education__link,
+  .education__profession,
+  .skills__text,
+  .work-experience__subtitle,
+  .code__text,
+  .languages__text,
+  .footer__text {
+    font-size: 16px;
+  }
+
+  .contacts__link:hover .contacts__icon,
+  .contacts__link:hover .contacts__text::before,
+  .education__link:hover,
+  .work-experience__img:hover,
+  .footer__img:hover {
+    transform: none;
+  }
+
+  .contacts__text::before {
+    display: none;
+  }
+
+  .contacts__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .education__item {
+    margin-bottom: 10px;
+  }
+
+  .skills__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .certificates__item:hover {
+    opacity: 1;
+  }
+
+  .work-experience__item {
+    flex: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .section__title {
+    padding: 3px 20px;
+    border: 2px solid #0039a6;
+    font-size: 16px;
+  }
+
+  .section__title::after {
+    height: 2px;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .header__img {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .header__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__title {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+
+  .header__subtitle {
+    font-size: 20px;
+  }
+
+  .contacts__text,
+  .about__text,
+  .education__date,
+  .education__link,
+  .education__profession,
+  .work-experience__subtitle,
+  .code__text,
+  .languages__text,
+  .footer__text {
+    font-size: 14px;
+  }
+
+  .skills__text {
+    display: none;
+  }
+
+  .contacts__icon {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .skills__icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .skills__item:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .education__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education__date {
+    margin-top: 0;
+    width: fit-content;
+  }
+
+  .education__name::before {
+    top: -45px;
+    left: -webkit-calc(50% - 7px);
+    left: -moz-calc(50% - 7px);
+    left: calc(50% - 7px);
+  }
+
+  .education__name::after {
+    top: -29px;
+    left: 50%;
+    width: 2px;
+    height: 28px;
+  }
+
+  .education__name {
+    margin-left: 0;
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .skills__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .certificates__list {
+    justify-content: center;
+  }
+
+  .work-experience__img {
+    width: 260px;
+  }
+
+  .languages__img {
+    width: 48px;
+  }
+}
