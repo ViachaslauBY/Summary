@@ -150,8 +150,8 @@ body {
 
 .header__img {
   margin-right: 10px;
-  width: 230px;
-  height: 230px;
+  width: 350px;
+  height: 405px;
   border-radius: 20px;
 }
 
@@ -514,6 +514,11 @@ body {
     font-size: 24px;
   }
 
+  .header__img {
+    width: 300px;
+    height: 347px;
+  }
+
   .header__burger {
     display: block;
   }
@@ -621,6 +626,8 @@ body {
   .header__img {
     margin-right: 0;
     margin-bottom: 5px;
+    width: 250px;
+    height: 289px;
   }
 
   .header__inner {
