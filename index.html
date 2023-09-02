@@ -15,7 +15,17 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__container">        
+      <div class="header__container">   
+        <div class="header__butoons">          
+          <div class="header__translation">
+            <button class="translation__buuton" id="en" type="button" aria-label="English language selection">
+              <img class="translation__img" src="img/gb.png" alt="Great Britain Flag">
+            </button>
+            <button class="translation__buuton" id="ru" type="button" aria-label="Russian Flag language selection">
+              <img class="translation__img" src="img/ru.png" alt="Russian Flag">
+            </button>
+          </div>
+        </div>
         <div class="header__nav">
           <button class="header__burger" type="button" aria-label="Burger menu">
             <span class="burger__line"></span>
@@ -25,25 +35,25 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#contacts">Contacts</a>
+                <a class="nav__link lang" href="#contacts" data-key="contacts">Contacts</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#about">About me</a>
+                <a class="nav__link lang" href="#about" data-key="about">About me</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#education">Courses</a>
+                <a class="nav__link lang" href="#education" data-key="education">Courses</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#certificates">Certificates</a>
+                <a class="nav__link lang" href="#certificates" data-key="certificates">Certificates</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#skills">Skills</a>
+                <a class="nav__link lang" href="#skills" data-key="skills">Skills</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#work-experience">Work experience</a>
+                <a class="nav__link lang" href="#work-experience" data-key="work-experience">Work experience</a>
               </li>              
               <li class="nav__item">
-                <a class="nav__link" href="#languages">Languages</a>
+                <a class="nav__link lang" href="#languages" data-key="languages">Languages</a>
               </li>
             </ul>
           </nav>
@@ -52,8 +62,8 @@
       <div class="header__inner">
         <img class="header__img" src="img/my-photo.png" alt="Viachaslau Fedartsou">
         <div class="header__info">
-          <h1 class="header__title">Fedartsou Viachaslau</h1>
-          <h2 class="header__subtitle">Front-End Developer</h2>
+          <h1 class="header__title lang" data-key="name">Fedartsou Viachaslau</h1>
+          <h2 class="header__subtitle lang" data-key="profession">Front-End Developer</h2>
         </div>
       </div>
     </div>
@@ -63,7 +73,7 @@
     <section class="section contacts" id="contacts">
       <div class="container">
         <div class="section__wrapper">
-          <h2 class="section__title">Contacts</h2>
+          <h2 class="section__title lang" data-key="contacts">Contacts</h2>
         </div>
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -103,9 +113,9 @@
     <section class="section about" id="about">
       <div class="container">
         <div class="section__wrapper">
-          <h2 class="section__title">About me</h2>
+          <h2 class="section__title lang" data-key="about">About me</h2>
         </div>
-        <p class="about__text">My main goal is to get a job as a Frontend developer and become a
+        <p class="about__text lang" data-key="about-text">My main goal is to get a job as a Frontend developer and become a
           highly qualified specialist in this field. My key skills are teamwork and quick learning. I am constantly learning
           new programming skills and developing my English language skills. I hope to become part of a dynamic team.
         </p>
@@ -115,49 +125,49 @@
     <section class="section education" id="education">
       <div class="container">
         <div class="section__wrapper">
-          <h2 class="section__title">Courses</h2>
+          <h2 class="section__title lang" data-key="education">Courses</h2>
         </div>
         <ul class="education__list">
           <li class="education__item">
-            <span class="education__date">Jun 2019 - Sep 2019</span>
+            <span class="education__date lang" data-key="education-date1">Jun 2019 - Sep 2019</span>
             <div class="education__name">
-              <a class="education__link" href="https://www.gomel.it-academy.by/" target="_blank">IT-Academy</a>
-              <span class="education__profession">Website development with HTML, CSS & JavaScript</span>
+              <a class="education__link lang" href="https://www.gomel.it-academy.by/" target="_blank" data-key="it-academy">IT-Academy</a>
+              <span class="education__profession lang" data-key="academy-profession1">Website development with HTML, CSS & JavaScript</span>
             </div>
           </li>
           <li class="education__item">
-            <span class="education__date">May 2020 - Aug 2020</span>
+            <span class="education__date lang" data-key="education-date2">May 2020 - Aug 2020</span>
             <div class="education__name">
               <a class="education__link" href="https://www.gomel.it-academy.by/" target="_blank">IT-Academy</a>
-              <span class="education__profession">Web application development with JavaScript</span>
+              <span class="education__profession lang" data-key="academy-profession2">Web application development with JavaScript</span>
             </div>
           </li>
           <li class="education__item">
-            <span class="education__date">Sep 2020 - Aug 2021</span>
+            <span class="education__date lang" data-key="education-date3">Sep 2020 - Aug 2021</span>
             <div class="education__name">
               <a class="education__link" href="https://skillbox.ru/" target="_blank">SKILLBOX</a>
-              <span class="education__profession">Web developer</span>
+              <span class="education__profession lang" data-key="skillbox-profession">Web developer</span>
             </div>
           </li>
           <li class="education__item">
-            <span class="education__date">Oct 2021 - Feb 2022</span>
+            <span class="education__date lang" data-key="education-date4">Oct 2021 - Feb 2022</span>
             <div class="education__name">
               <a class="education__link" href="https://training.epam.com/" target="_blank">EPAM Training</a>
-              <span class="education__profession">Front-End Development</span>
+              <span class="education__profession lang" data-key="epam-profession">Front-End Development</span>
             </div>
           </li>
           <li class="education__item">
-            <span class="education__date">Dec 2022 - Feb 2023</span>
+            <span class="education__date lang" data-key="education-date5">Dec 2022 - Feb 2023</span>
             <div class="education__name">
               <a class="education__link" href="https://rs.school/" target="_blank">RS School</a>
-              <span class="education__profession">JavaScript/Front-end. Stage 0</span>
+              <span class="education__profession lang" data-key="rs-profession">JavaScript/Front-end. Stage 0</span>
             </div>
           </li>
           <li class="education__item">
-            <span class="education__date">Mar 2023 - Jun 2023</span>
+            <span class="education__date lang" data-key="education-date6">Mar 2023 - Jun 2023</span>
             <div class="education__name">
               <a class="education__link" href="https://rs.school/" target="_blank">RS School</a>
-              <span class="education__profession">JavaScript/Front-end. Stage 1</span>
+              <span class="education__profession lang" data-key="rs-profession2">JavaScript/Front-end. Stage 1</span>
             </div>
           </li>
         </ul>
@@ -167,7 +177,7 @@
     <section class="section certificates" id="certificates">
       <div class="container">
         <div class="section__wrapper">
-          <h2 class="section__title">Certificates</h2>
+          <h2 class="section__title lang" data-key="education">Certificates</h2>
         </div>
         <ul class="certificates__list">
           <li class="certificates__item">
@@ -189,7 +199,7 @@
     <section class="section skills" id="skills">
       <div class="container">
         <div class="section__wrapper">
-          <h2 class="section__title">Skills</h2>
+          <h2 class="section__title lang" data-key="skills">Skills</h2>
         </div>
         <ul class="skills__list">
           <li class="skills__item">
@@ -231,7 +241,7 @@
     <section class="section work-experience" id="work-experience">
       <div class="container">
         <div class="section__wrapper">
-          <h2 class="section__title">Work experience</h2>
+          <h2 class="section__title lang" data-key="work-experience">Work experience</h2>
         </div>
         <ul class="work-experience__list">          
           <li class="work-experience__item">
@@ -255,20 +265,20 @@
     <section class="section languages" id="languages">
       <div class="container">
         <div class="section__wrapper">
-          <h2 class="section__title">Languages</h2>
+          <h2 class="section__title lang" data-key="languages">Languages</h2>
         </div>
         <ul class="languages__list">
           <li class="languages__item">
             <img class="languages__img" src="img/gb.png" alt="Great Britain Flag">
-            <span class="languages__text">English (Pre-Intermediate)</span>
+            <span class="languages__text lang" data-key="en">English (Pre-Intermediate)</span>
           </li>
           <li class="languages__item">
             <img class="languages__img" src="img/ru.png" alt="Russian Flag">
-            <span class="languages__text">Russian (Fluent)</span>
+            <span class="languages__text lang" data-key="ru">Russian (Fluent)</span>
           </li>
           <li class="languages__item">
             <img class="languages__img" src="img/by.png" alt="Belarusian Flag">
-            <span class="languages__text">Belarusian (Native)</span>
+            <span class="languages__text lang" data-key="by">Belarusian (Native)</span>
           </li>
         </ul>
       </div>
