@@ -22,6 +22,14 @@ body {
   background-color: #f3f0f0;
 }
 
+.dark {
+  color: #fff;
+}
+
+.dark body {
+  background-color: #000;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1300px;
@@ -49,6 +57,11 @@ body {
   background-color: #fff;
   text-align: center;
   text-transform: uppercase;
+}
+
+.dark .section__title {
+  background-color: #0039a6;
+  color: #fff;
 }
 
 .section__title::after {
@@ -102,6 +115,21 @@ body {
   margin-right: 5px;
 }
 
+.header__icon-toggle {
+  display: flex;
+  margin-right: 10px;
+  z-index: 3;
+}
+
+.material-icons {
+  font-size: 30px;
+  line-height: normal;
+}
+
+.dark .material-icons {
+  color: #fff;
+}
+
 .header__burger {
   position: relative;
   display: none;
@@ -118,6 +146,10 @@ body {
   height: 2px;
   background-color: #000;
   transition: all 0.2s;
+}
+
+.dark .burger__line {
+  background-color: #fff;
 }
 
 .burger__line:first-child {
@@ -160,6 +192,10 @@ body {
   text-decoration: none;
 }
 
+.dark .nav__link {
+  color: #fff;
+}
+
 .nav__link:hover {
   color: #356ad3;
 }
@@ -186,9 +222,19 @@ body {
   text-shadow: 1px 1px white, 2px 2px #777;
 }
 
+.dark .header__title {
+  color: #fff;
+  text-shadow: 1px 1px #777, 2px 2px #356ad3;
+}
+
 .header__subtitle {
   font-size: 39px;
   text-shadow: 1px 1px white, 2px 2px #777;
+}
+
+.dark .header__subtitle {
+  color: #fff;
+  text-shadow: 1px 1px #777, 2px 2px #356ad3;
 }
 
 /**********CONTACTS**********/
@@ -233,6 +279,10 @@ body {
   font-size: 18px;
   color: #000;
   text-decoration: none;
+}
+
+.dark .contacts__text {
+  color: #fff;
 }
 
 .contacts__text::before {
@@ -318,6 +368,10 @@ body {
   z-index: 1;
 }
 
+.dark .education__name::before {
+  background-color: #f9f400;
+}
+
 .education__name::after {
   content: '';
   position: absolute;
@@ -343,6 +397,10 @@ body {
   -ms-transition: -ms-transform 0.3s linear;
   -o-transition: -o-transform 0.3s linear;
   transition: transform 0.3s linear;
+}
+
+.dark .education__link {
+  color: #f9f400;
 }
 
 .education__link:hover {
@@ -564,6 +622,10 @@ body {
     z-index: 2;
   }
 
+  .dark .nav {
+    background-color: #000;
+  }
+
   .nav.active {
     left: 0;
   }
@@ -714,6 +776,10 @@ body {
   .education__date {
     margin-top: 0;
     width: fit-content;
+  }
+
+  .dark .education__date {
+    color: #f70006;
   }
 
   .education__name::before {
