@@ -812,6 +812,10 @@ body {
     justify-content: center;
   }
 
+  .work-experience__list {
+    justify-content: center;
+  }
+
   .work-experience__img {
     width: 260px;
   }

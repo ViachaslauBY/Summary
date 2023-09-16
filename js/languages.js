@@ -67,9 +67,23 @@ const changeLanguage = () => {
 
         const lang = event.currentTarget.getAttribute('id');
 
-        elemets.forEach(el => el.textContent = languages[lang][el.getAttribute('data-key')]);              
+        elemets.forEach(el => el.textContent = languages[lang][el.getAttribute('data-key')]);   
+        
+        localStorage.getItem('languages') === 'ru' ? localStorage.removeItem('languages') : localStorage.setItem('languages', 'ru');
+        
+        addLanguage();               
       });      
     });
+
+    const addLanguage = () => {
+      if (localStorage.getItem('languages') === 'ru') {
+        elemets.forEach(el => el.textContent = languages['ru'][el.getAttribute('data-key')]);
+      } else {
+        elemets.forEach(el => el.textContent = languages['en'][el.getAttribute('data-key')]);
+      }
+    }
+
+    addLanguage(); 
   }
 
 export default changeLanguage;
