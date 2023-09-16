@@ -18,6 +18,7 @@ const languages = {
     'skillbox-profession': 'Web developer',
     'epam-profession': 'Front-End Development',
     'rs-profession': 'JavaScript/Front-end. Stage 0',
+    'rs-profession2': 'JavaScript/Front-end. Stage 1',
     'skills': 'Skills',
     'certificates': 'Certificates',
     'work-experience': 'Work experience',    
